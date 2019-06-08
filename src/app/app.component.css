@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0; padding: 0;
+}
+a{text-decoration: none}
+
+.wrapper{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+form.onBoard_form {
+    background: #f7f7f7;
+    padding: 4em 9em;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 1rem;
+    float: left;
+    width: 100%;
+}
+form.onBoard_form label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    float: left;
+    width: 30%;
+    font-size: 12px;
+}
+form.onBoard_form .form-input {
+    width: 70%;
+    float: left;
+}
+form.onBoard_form input[type="text"], form.onBoard_form select {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #dadada;
+    background: #fdfdfd;
+    outline: 0;
+}
+form.onBoard_form input[type='radio']{
+    float: left;
+}
+.tablets label{
+    line-height: 12px;
+    padding: 0 4px;
+}
+
+@media only screen and (max-width: 600px) {
+form.onBoard_form {
+    padding: 2em;
+}
+}

@@ -1,0 +1,45 @@
+<div class="wrapper">
+  <app-member-filter (filterMembersEvent)="filterMembersHandler($event)"></app-member-filter>
+  <div class="container">
+    <ul class="user-profiles-list-basic">
+      <li *ngFor="let member of filteredMembers">
+        <ngb-accordion activeIds="ngb-panel-0">
+          <ngb-panel>
+
+            <ng-template ngbPanelHeader>
+
+              <div class="d-flex align-items-center justify-content-between">
+                <button class="acc_ToggleBtn" ngbPanelToggle
+                  class="btn btn-sm btn-outline-primary">{{member.name}}</button>
+                <div>
+                  <i class="fa fa-user fa-2x" [routerLink]="['/onboard']"
+                    [queryParams]="{ memberId: member.id, viewMode: 'VIEW'}"></i>
+                  <i class="fa fa-edit fa-2x" [routerLink]="['/onboard']"
+                    [queryParams]="{ memberId: member.uid, viewMode: 'EDIT'}"></i>
+                  <i class="fa fa-times fa-2x" aria-hidden="true" (click)="deleteMember(member.id)"></i>
+                </div>
+              </div>
+            </ng-template>
+
+            <ng-template ngbPanelContent>
+
+              <a href="#" class="user-avatar">
+                <img src="{{member.imgUrl}}" width="120" alt="Profile of Adeline Yong" />
+              </a>
+              <ul class="card_list">
+                <li><a href="">{{member.name}}</a></li>
+                <li>Chapter - {{member.chapter}} </li>
+                <li> Region - {{member.region}}</li>
+                <li>Zone - {{member.zone}} </li>
+                <li>Mobile No. - {{member.mobileNo}} </li>
+                <li> Division - {{member.division}}</li>
+
+              </ul>
+
+            </ng-template>
+          </ngb-panel>
+        </ngb-accordion>
+      </li>
+    </ul>
+  </div>
+</div>

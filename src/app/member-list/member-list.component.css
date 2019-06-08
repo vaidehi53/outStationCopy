@@ -1,0 +1,64 @@
+.wrapper{
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.user-profiles-list-basic .user-avatar{
+    float: left;
+    width:150px;
+    height: 150px;
+    text-align: left;
+  }
+.margin-10px {
+  margin-left: 10%
+}
+/* //////////////// */
+
+ul.user-profiles-list-basic {
+  padding: 0;
+  list-style: none;
+  margin: 20px 0;
+}
+.user-profiles-list-basic> li:last-child {
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.acc_ToggleBtn{
+  width: 85%;
+  text-align: left;
+  border: none;
+  text-transform: capitalize;
+}
+button.btn.btn-sm.btn-outline-primary {
+  width: 85%;
+  text-align: left;
+  /* padding: 0; */
+  border: 0;
+}
+.btn-outline-primary:focus{box-shadow: none}
+i.fa.fa-2x {
+  font-size: 1em;
+  margin: 0 0.2em;
+  cursor: pointer;
+  vertical-align: top;
+  color: #007bff;
+  font-weight: normal;
+}
+
+.card_list{
+     margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none; 
+}
+.card_list li{font-size: 12px;}
+.card-header {
+  padding: 0.25rem 0.25rem;}
+ 
+  .btn-outline-primary:hover {
+    color: #007bff;
+    background-color: #ebebeb73;
+    border-color: #007bff;
+}
+
+
+
